@@ -9,7 +9,7 @@ This repository contains the  visualisations conducted for my dissertation. The 
    - Visualisation of key insights and trends from the cleaned dataset.
 
 2. **[Dashboard for Raw Data](https://public.tableau.com/views/anunay_tableau_dissertation_part2/Tableau_dashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
-   - Initial exploration of patterns and anomalies in the raw data.
+   - Visualisation of key insights and trends from the raw dataset.
 
 
 
