@@ -6,7 +6,7 @@ This repository contains the  visualisations conducted for my dissertation. The 
 ## Interactive Tableau Dashboards
 
 1. **[Dashboard for Cleaned Data](https://public.tableau.com/views/Tableau_Analysis_Dissertation/Tableau_Analysis_dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
-   - Visualization of key insights and trends from the cleaned dataset.
+   - Visualisation of key insights and trends from the cleaned dataset.
 
 2. **[Dashboard for Raw Data](https://public.tableau.com/views/anunay_tableau_dissertation_part2/Tableau_dashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
    - Initial exploration of patterns and anomalies in the raw data.
