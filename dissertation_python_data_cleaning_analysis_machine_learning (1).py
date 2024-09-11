@@ -340,7 +340,6 @@ def machine_learning_pipeline(df, target_column= 'Registrations (number)', test_
         #Evaluation
         train_accuracy = accuracy_score(y_train_res_labels, y_train_pred)
         test_accuracy = accuracy_score(y_test, y_test_pred)
-        roc_auc = roc_auc_score(y_test_numeric, y_proba) if y_proba is not None else None
         
         #Get the actual labels from y_test to avoid mismatch
         unique_labels= list(np.unique(y_test))
@@ -351,24 +350,16 @@ def machine_learning_pipeline(df, target_column= 'Registrations (number)', test_
             'test_accuracy' : test_accuracy,
             'classification_report' : classification_report(y_test, y_test_pred, output_dict=True),
             'confusion_matrix' : confusion_matrix(y_test, y_test_pred, labels=unique_labels),
-            'roc_auc' : roc_auc,
-            'fpr' : None,
-            'tpr' : None
+            
         }
         
-        if y_proba is not None:
-            if model_name == 'XGBoost':
-                fpr, tpr, _ = roc_curve(y_test_numeric, y_proba)
-            else:
-                fpr, tpr, _ = roc_curve(pd.get_dummies(y_test)['High Risk'], y_proba)
-            results[model_name]['fpr'] =fpr
-            results[model_name]['tpr'] =tpr
+         
         
         # Output the results for each model.
         print(f"\nModel: {model_name}")
         print(f"Training Accuracy: {train_accuracy:.2f}")
         print(f"Testing Accuracy: {test_accuracy:.2f}")
-        print(f"ROC AUC Score: {roc_auc:.2f}" if roc_auc else "")
+        
         print("Classification Report:")
         print(classification_report(y_test, y_test_pred))
         
@@ -401,18 +392,7 @@ def plot_evaluation_metrics(results):
     plt.tight_layout()
     plt.show()
     
-    #plot ROC AUC curves
-    plt.figure(figsize=(10, 8))
-    for model_name in model_names:
-        if results[model_name]['roc_auc'] is not None:
-            plt.plot(results[model_name]['fpr'], results[model_name]['tpr'], label=f"{model_name} (AUC = {results[model_name]['roc_auc']:.2f})")
-            
-    plt.plot([0, 1], [0, 1], 'k--')
-    plt.xlabel('False Positive Rate')
-    plt.ylabel('True Positive Rate')
-    plt.title('ROC AUC Curves')
-    plt.legend(loc='best')
-    plt.show()
+    
     
     #plot confusion matrices
     for model_name in model_names:
