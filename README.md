@@ -1,21 +1,17 @@
 ## Tableau Dashboard
 # Dissertation Data Analysis
 
-This repository contains the  visualisations conducted for my dissertation. The analysis was performed using Tableau, and the results are presented in two interactive dashboards.
+This repository contains the  visualisations conducted for my dissertation. The analysis was performed using Tableau, and the results are presented in an interactive dashboard.
 
-## Interactive Tableau Dashboards
+## Interactive Tableau Dashboard
 
-1. **[Dashboard for Cleaned Data](https://public.tableau.com/views/Tableau_Analysis_Dissertation/Tableau_Analysis_dashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
-   - Visualisation of key insights and trends from the cleaned dataset.
-
-2. **[Dashboard for Raw Data](https://public.tableau.com/views/anunay_tableau_dissertation_part2/Tableau_dashboard?:language=en-US&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link)**
-   - Visualisation of key insights and trends from the raw dataset.
+1. **[Tableau Dashboard]https://public.tableau.com/views/Tableau_Analysis_Dissertation/TableauAnalysisDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link**
+   - Visualisation of key insights and trends from the dataset
 
 
+## How to Use the Dashboard
 
-## How to Use the Dashboards
-
-To explore the dashboards, click on the provided links. They are hosted on Tableau Public and can be viewed online without any additional software.
+To explore the dashboard, click on the provided link. It is hosted on Tableau Public and can be viewed online without any additional software.
 
 
 
