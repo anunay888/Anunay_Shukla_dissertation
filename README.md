@@ -5,7 +5,7 @@ This repository contains the  visualisations conducted for my dissertation. The 
 
 ## Interactive Tableau Dashboard
 
-1. **[Tableau Dashboard]https://public.tableau.com/views/Tableau_Analysis_Dissertation/TableauAnalysisDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link**
+1. **[Tableau Dashboard]https://public.tableau.com/views/Tableau_Dissertation_Analysis/TableauAnalysisDashboard?:language=en-US&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link**
    - Visualisation of key insights and trends from the dataset
 
 
